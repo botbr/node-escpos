@@ -804,6 +804,19 @@ Printer.prototype.cut = function (part, feed) {
 };
 
 /**
+ * [function Cut paper Bematech]
+ * @param  {[type]} part [description]
+ * @return {[Printer]} printer  [the escpos printer instance]
+ */
+Printer.prototype.cutBema = function (part, feed) {
+  this.feed(feed || 3);
+  this.buffer.write(_.PAPER[
+    part == 'part' ? 'BEMA_PART_CUT' : 'BEMA_FULL_CUT'
+  ]);
+  return this;
+};
+
+/**
  * [close description]
  * @param  {Function} callback [description]
  * @param  {[type]}   options  [description]
