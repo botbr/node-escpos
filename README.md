@@ -52,6 +52,7 @@ device.open(function(error){
   )
   .qrimage('https://github.com/song940/node-escpos', function(err){
     this.cut();
+    // For Bematech this.cutBema('part'); /* part or full */
     this.close();
   });
 });
