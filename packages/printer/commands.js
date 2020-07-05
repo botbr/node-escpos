@@ -93,7 +93,9 @@ _.PAPER = {
   PAPER_FULL_CUT: '\x1d\x56\x00', // Full cut paper
   PAPER_PART_CUT: '\x1d\x56\x01', // Partial cut paper
   PAPER_CUT_A: '\x1d\x56\x41', // Partial cut paper
-  PAPER_CUT_B: '\x1d\x56\x42', // Partial cut paper
+  PAPER_CUT_B: '\x1d\x56\x42', // Partial cut paper  
+  BEMA_PART_CUT: '\x1B\x6D', // Bematech Partial Cut
+  BEMA_FULL_CUT: '\x1B\x69', // Bematech Full Cut
 };
 
 /**
